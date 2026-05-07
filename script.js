@@ -1,5 +1,4 @@
-<script>
-  async function updateWeather() {
+async function updateWeather() {
     let lat = 48.51; 
     let lon = 34.61;
 
