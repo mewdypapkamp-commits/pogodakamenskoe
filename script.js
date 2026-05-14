@@ -8,7 +8,7 @@ async function updatePrices() {
   const distance = Math.hypot(lat - 48.85, (lon - 2.35) * 0.66) * 111;
   const busPrice = Math.round(distance * 3);
   const planePrice = Math.round(distance * 4 + 1000);
-  if (document.getElementById('cina-c')) document.getElementById('cina-c').innerText = 'На автобусі приблизно - ' + busPrice + ' грн';
-  if (document.getElementById('cina-s')) document.getElementById('cina-s').innerText = 'На літаку приблизно - ' + planePrice + ' грн';
+  if (document.getElementById('cina-c')) document.getElementById('cina-c').innerText = 'На автобусі приблизно: ' + busPrice + ' грн';
+  if (document.getElementById('cina-s')) document.getElementById('cina-s').innerText = 'На літаку приблизно: ' + planePrice + ' грн';
 }
 updatePrices();
