@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Crimson+Text&family=Inter&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#AEE9E9;
+  color:#012309;
+  overflow-x:hidden;
+}
+
+
+.hero-section{
+  position:relative;
+}
+
+.hero-header{
+  background:#689E84;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  padding:20px;
+}
+
+.hero-title{
+  font-size:70px;
+  font-family:'Anonymous Pro',monospace;
+}
+
+.hero-flag{
+  width:100px;
+}
+
+.hero-body{
+  position:relative;
+  padding:40px 20px;
+}
+
+.hero-bg{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  opacity:0.3;
+}
+
+.hero-content-card{
+  position:relative;
+  z-index:2;
+  max-width:1100px;
+  margin:auto;
+  background:rgba(255,255,255,0.8);
+  border-radius:30px;
+  overflow:hidden;
+  display:flex;
+}
+
+.hero-image-col{
+  width:45%;
+}
+
+.hero-side-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.hero-text-col{
+  flex:1;
+  padding:40px;
+}
+
+.hero-intro-text{
+  margin-bottom:20px;
+  font-size:22px;
+  line-height:1.6;
+}
+
+
+.nature-section{
+  position:relative;
+  background:#454D56;
+  overflow:hidden;
+}
+
+.nature-bg{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  opacity:0.4;
+}
+
+.nature-overlay-ellipse{
+  position:absolute;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+  width:40%;
+  height:90%;
+  background:rgba(255,255,255,0.5);
+  border-radius:50%;
+}
+
+.nature-content{
+  position:relative;
+  z-index:2;
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
+  display:flex;
+  gap:30px;
+}
+
+.nature-images{
+  width:45%;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.nature-img{
+  width:100%;
+  border-radius:25px;
+  object-fit:cover;
+}
+
+.nature-img-1{
+  height:200px;
+}
+
+.nature-img-2,
+.nature-img-3{
+  height:170px;
+}
+
+.nature-text{
+  flex:1;
+  color:white;
+  font-size:20px;
+  line-height:1.7;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+
+.impressions-section{
+  background:#83011D;
+  padding:50px 20px;
+}
+
+.impressions-grid{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.impressions-img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.impressions-quote-wrap{
+  max-width:1000px;
+  margin:40px auto 0;
+  position:relative;
+}
+
+.impressions-quote-bg{
+  position:absolute;
+  inset:0;
+  border-radius:60px;
+}
+
+.impressions-quote-bg--pink{
+  background:rgba(255,220,220,0.8);
+}
+
+.impressions-quote-bg--red{
+  background:rgba(212,61,81,0.6);
+  top:10px;
+  left:10px;
+}
+
+.impressions-quote-text{
+  position:relative;
+  z-index:2;
+  padding:25px 40px;
+  font-size:22px;
+  line-height:1.6;
+}
+
+
+.souvenirs-section{
+  position:relative;
+}
+
+.souvenirs-bg{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+}
+
+.souvenirs-content{
+  position:relative;
+  z-index:2;
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:50px;
+}
+
+.souvenirs-row{
+  display:flex;
+  align-items:center;
+  gap:30px;
+}
+
+.souvenirs-row--reverse{
+  flex-direction:row-reverse;
+}
+
+.souvenirs-img{
+  width:45%;
+  height:220px;
+  object-fit:cover;
+  border-radius:25px;
+}
+
+.souvenirs-img--tall{
+  height:320px;
+}
+
+.souvenirs-text-block{
+  flex:1;
+  background:rgba(255,255,255,0.7);
+  padding:30px;
+  border-radius:25px;
+}
+
+.souvenirs-text{
+  font-size:22px;
+  line-height:1.6;
+}
+
+
+.travelcost-section{
+  position:relative;
+  overflow:hidden;
+}
+
+.travelcost-bg{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  opacity:0.5;
+}
+
+.travelcost-content{
+  position:relative;
+  z-index:2;
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+}
+
+.travelcost-title-bar{
+  background:rgba(0,0,0,0.7);
+  padding:20px 30px;
+  border-radius:30px;
+}
+
+.travelcost-title{
+  color:white;
+  font-size:42px;
+}
+
+.travelcost-photo-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.travelcost-photo{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.travelcost-card,
+.travelcost-booking-card,
+.travelcost-final-card{
+  background:rgba(255,255,255,0.85);
+  padding:35px;
+  border-radius:35px;
+}
+
+.travelcost-body,
+.travelcost-booking-text,
+.travelcost-final-text{
+  font-size:22px;
+  line-height:1.6;
+  margin-bottom:15px;
+}
+
+.travelcost-links{
+  list-style:none;
+}
+
+.travelcost-links li{
+  margin-bottom:10px;
+  font-size:22px;
+}
+
+.travelcost-link-name{
+  font-weight:bold;
+}
+
+
+@media(max-width:768px){
+
+  .hero-content-card,
+  .nature-content,
+  .souvenirs-row,
+  .souvenirs-row--reverse{
+    flex-direction:column;
+  }
+
+  .hero-image-col,
+  .nature-images,
+  .souvenirs-img{
+    width:100%;
+  }
+
+  .impressions-grid,
+  .travelcost-photo-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-title{
+    font-size:45px;
+  }
+
+  .travelcost-title{
+    font-size:30px;
+  }
+}
